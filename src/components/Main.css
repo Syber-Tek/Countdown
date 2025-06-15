@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "JetBrains", monospace;
+	color: #fff;
+}
+
+.page {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.page video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.overLay {
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.page_content {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.page h1 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.page h3 {
+	font-weight: 300;
+	max-width: 400px;
+	margin-bottom: 3px;
+}
+
+.page .send_email {
+	border-radius: 30px;
+	border: none;
+	outline: none;
+    z-index: none;
+    width:calc(100% - 30px);
+    height: 35px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.page button {
+	width: max-content;
+	height: max-content;
+	border-radius: 50px;
+	z-index: 0;
+	padding: 10px;
+	font-size: 18px;
+	font-weight: 700;
+	border: none;
+	margin: 10px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+.flip-clock {
+	--fcc-flip-duration: 0.5s; /* transition duration when flip card */
+	--fcc-spacing: 8px; /* space between unit times and separators */
+	--fcc-digit-block-width: 30px; /* width of digit card */
+	--fcc-digit-block-height: 60px; /* height of digit card, highly recommend in even number */
+	--fcc-digit-block-radius: 5px; /* border radius of digit card */
+	--fcc-digit-block-spacing: 5px; /* space between blocks in each unit of time */
+	--fcc-digit-font-size: 30px; /* font size of digit */
+	--fcc-digit-color: #000; /* color of digit */
+	--fcc-label-font-size: 10px; /* font size of label */
+	--fcc-label-color: #ffffff; /* color of label */
+	--fcc-background: #fff; /* background of digit card */
+	--fcc-divider-color: #000; /* color of divider */
+	--fcc-divider-height: 1px; /* height of divider */
+	--fcc-separator-size: 6px; /* size of colon */
+	--fcc-separator-color: #fff; /* color of colon */
+}
+
+.flip-clock {
+	font-family: "Orbitron";
+	font-weight: 700;
+	margin-bottom: 2rem;
+}
+
+/* Media Query for Tablets (768px to 1079px) */
+@media (max-width: 1079px) and (min-width: 768px) {
+	.page h1 {
+		font-size: 3rem;
+	}
+
+	.page h3 {
+		font-size: 1rem;
+		max-width: 500px;
+	}
+
+	.flip-clock {
+		--fcc-digit-block-width: 60px;
+		--fcc-digit-block-height: 100px;
+		--fcc-digit-font-size: 50px;
+		--fcc-label-font-size: 15px;
+	}
+
+	.page button {
+		font-size: 18px;
+		padding: 12px 18px;
+	}
+}
+
+/* Media Query for Phones (up to 767px) */
+@media (max-width: 767px) {
+	.page h1 {
+		font-size: 2.5rem;
+	}
+
+	.page h3 {
+		font-size: 0.9rem;
+		max-width: 300px;
+	}
+
+	.flip-clock {
+		--fcc-digit-block-width: 40px;
+		--fcc-digit-block-height: 70px;
+		--fcc-digit-font-size: 30px;
+		--fcc-label-font-size: 12px;
+	}
+
+	.page button {
+		font-size: 16px;
+		padding: 10px 15px;
+	}
+}
